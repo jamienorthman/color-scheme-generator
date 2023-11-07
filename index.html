@@ -1,4 +1,4 @@
-html <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,9 +9,28 @@ html <!DOCTYPE html>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-       <div class="container">
-        
-       </div>
+       <div class="main-container">
+        <div class="controls">
+            <input type="color">
+            
+            <select name="schemes" id="choose-scheme">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="Analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+
+            </select>
+
+            <button>Get Color Scheme</button>
+        </div>
+
+        <div class="color-palette"></div>
+
+    </div>
         
         <script src="app.js" async defer></script>
     </body>
