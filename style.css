@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #1c1c1c;
+}
+
+.main-container {
+    margin: 3.125em auto;
+    box-sizing: border-box;
+    max-width: 800px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+button, input,
+select {
+    cursor: pointer;
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
