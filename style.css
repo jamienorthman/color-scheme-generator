@@ -11,7 +11,7 @@ body {
     max-width: 800px;
     border: 1px solid #FFFF;
     flex-direction: column;
-    padding: 0.625em;
+    padding: 1.25em 0.625em;
     box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -64,16 +64,26 @@ button:hover {
     margin: 0.625em 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
 }
 
 .color {
     height: 75vh;
+    position: relative;
 }
 
 .color-code {
     color: black;
-    background-color: #FFFF;
     text-align: center;
-    margin-top: auto;
+    position: absolute;
+    bottom: -50px;
+    margin-left: 1.45em;
+    margin-bottom: 1.25em;
+}
+
+@media (max-width: 767px) {
+    .color-code {
+        font-size: 0.8rem;
+        margin-left: 0.4em;
+        padding-bottom: 1em;
+    }
 }
