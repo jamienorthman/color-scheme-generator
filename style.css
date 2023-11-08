@@ -8,14 +8,20 @@ body {
     margin: 3.125em auto;
     box-sizing: border-box;
     max-width: 800px;
-    border: 1px solid white;
-    display: flex;
+    border: 1px solid #FFFF;
     flex-direction: column;
+    padding: 0.625em;
+}
+
+.main-container,
+.controls {
+    display: flex;
+    background-color: #FFFF;
 }
 
 .controls {
-    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 button, input,
@@ -24,6 +30,18 @@ select {
 }
 
 .color-palette {
+    max-width: 100%;
+    margin: 0.625em 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.color {
+    height: 75vh;
+}
+
+.color-code {
+    color: black;
+    background-color: #FFFF;
 }
